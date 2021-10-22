@@ -1,0 +1,17 @@
+.myText{
+    color: wheat;
+    background-color: black;
+    /* font-size: 30px; */
+    /* font-size: 3rem;
+    font-size: 3em; */
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 100px;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    
+
+
+}

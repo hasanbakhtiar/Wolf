@@ -1,0 +1,19 @@
+/* p:nth-child(odd){
+    color: red;
+    background-color: black;
+} */
+
+#my-text{
+    color: red;
+    background-color: black;
+}
+#my-text-second{
+    color: green;
+    background-color: black;
+}
+
+
+.a{
+    color: cadetblue;
+    background-color: pink;
+}
