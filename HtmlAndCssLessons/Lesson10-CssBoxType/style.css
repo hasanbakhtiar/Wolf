@@ -1,0 +1,121 @@
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-origin */
+/* https://stackoverflow.com/questions/31558245/declaring-all-css-background-properties-in-one-line-especially-background-size */
+body{
+    width: 100%;
+    height: 200vh;
+}
+
+.image-box{
+    border: 10px solid #000 ;
+    width: 100%;
+    height: 100vh;
+     background-image: url('img/hero.jpg');
+  /*  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box; */
+
+    /* https://cssgradient.io/ */
+
+
+}
+
+.image-box >h1{
+    width: 100%;
+    height: 500px;
+    /* background-color: rgba(4, 187, 59, 0.623);    */
+    /* background-image: url('img/hero.jpg'); */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,111,1) 35%, rgba(0,212,255,1) 100%);
+/* opacity: 0.5; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-first{ 
+
+        /* height: 400px;
+        width: 400px; */
+        /* border: 5px dotted #000; */
+        /* border-left:  10px solid #ab2345;
+        border-right:  5px dotted #dc2345; */
+        /* border:  10px solid #000; */
+        /* border-radius: 50%; */
+
+
+        /* background-color: red; */
+
+        /* hex */
+        /* 0123456789abcdef */
+        /* min-> #000 */
+        /* max-> #fff */
+        /* background-color: #000; */
+
+
+        /* rgb */
+        /* red green blue */
+        /* min-> 0
+        max-> 255 */
+        /* background-color: rgb(153, 4, 128); */
+
+        /* rgba */
+        /* red green blue afpha */
+
+
+        /* background-color: #000; */
+}
+
+/* .enter-box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(3, 243, 103,0.9);
+} */
+
+.box-second{
+        /* Margin xaricdən məsafə vermək üçündür */
+        /* margin-top: 100px ;
+        margin-right: 100px ;
+        margin-bottom: 100px ;
+        margin-left: 100px ; */
+        /* saat istiqaməti üzrə */
+        /* margin: 20px 50px 10px 200px; */
+
+    /* Margin daxildən məsafə vermək üçündür */
+    /* margin-top: 100px ;
+        margin-right: 100px ;
+        margin-bottom: 100px ;
+        margin-left: 100px ; */
+    /* saat istiqaməti üzrə */
+
+        /* padding-top: 100px ;
+        padding-right: 100px ;
+        padding-bottom: 100px ;
+        padding-left: 100px ; */
+    /* saat istiqaməti üzrə */
+        /* padding: 10px 20px 50px 100px; */
+        /* padding: 10px 20px 30px; */
+
+        height: 100px;
+        width: 100px;
+        background-color: green;
+
+}
