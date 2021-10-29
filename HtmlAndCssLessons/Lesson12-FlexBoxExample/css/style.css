@@ -1,0 +1,118 @@
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #262B32 ;
+}
+
+.container>header{
+    width: 100%;
+height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.container>header nav{
+    width: 50%;
+}
+
+.container>header nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+}
+
+.container>header nav ul li{
+  
+    list-style: none;
+}
+
+.container>header nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 17px;
+   font-weight: bolder;
+   font-family: sans-serif;
+
+}
+.container>header .btn-con select{
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.container>header .btn-con select option{
+    color: #000;
+}
+.container>header .btn-con select:focus{
+    outline: none;
+}
+.container>header .btn-con button{
+    width: 70px;
+    height: 40px;
+    background-color: #54a8c7;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+.container>header .btn-con button:hover{
+    cursor: pointer;
+}
+
+.container>.sec-1{
+    background-color: #262B32;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container>.sec-1 .sec-1-con{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container>.sec-1 .sec-1-con .left-text{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container>.sec-1 .sec-1-con .left-text h1,p,button{
+    color: #fff;
+}
+.container>.sec-1 .sec-1-con .left-text h1{
+    font-size: 40px;
+
+}
+.container>.sec-1 .sec-1-con .left-text p{
+    font-size: 20px;
+}
+
+.container>.sec-1 .sec-1-con .left-text button{
+    width: 100px;
+    height: 40px;
+    background-color: #54a8c7;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+.container>.sec-1 .sec-1-con .right-img img{
+    border-radius: 10px;
+}
+
+
