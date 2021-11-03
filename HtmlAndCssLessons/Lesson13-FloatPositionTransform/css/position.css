@@ -1,0 +1,81 @@
+@import "reset.css";
+
+
+/* position:relative -> referans verən */
+/* porition: absolue -> referans alan*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+    z-index: 5;
+
+}
+header>nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header>nav>ul{
+    width: 50%;
+justify-content: space-between;
+    display: flex;
+}
+
+header>nav>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.text-sec{
+    position: absolute;
+    z-index: 4;
+}
+.text-sec>p{
+    font-size: 30px;
+}
+
+.text-sec>.myDiv{
+    position: sticky;
+    top:0px;
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+}
+
+.text-sec>.myDiv1{
+    position: sticky;
+    top:100px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(20, 220, 220);
+}
+
+
+/* 
+.container{
+
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}   
+.container>.main-box{
+    position: absolute;
+    right: 10px;
+    width: 50%;
+    height: 300px;
+    background-color: red;
+}
+.container>.main-box>.box{
+    position: relative;
+    
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+} */

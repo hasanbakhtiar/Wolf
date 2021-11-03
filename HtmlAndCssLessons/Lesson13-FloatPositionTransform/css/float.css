@@ -1,0 +1,10 @@
+img{
+    border: 5px solid #000;
+    /* float: right; */
+    float: left;
+}
+.myText{
+    /* clear: right; */
+    /* clear: left; */
+    clear: both;
+}

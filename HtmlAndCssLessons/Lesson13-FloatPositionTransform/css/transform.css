@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container>.box{
+    /* transform: translateY(200px);
+    transform: translateX(200px); */
+    /* transform: translate(200px,100px); 
+    menfi qəbul edir
+    */
+    /* transform: rotate(10deg); */
+    /* transform: scale(3); */
+    /* transform: scaleX(3); */
+    /* transform: scaleY(3); */
+    /* transform: skew(50deg,100deg);
+    transform: skewY(50deg,100deg);
+    transform: skewX(50deg,100deg); */
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
