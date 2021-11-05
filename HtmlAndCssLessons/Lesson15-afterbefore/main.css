@@ -1,0 +1,39 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    position: relative;
+    transition: 1s;
+    width: 100px;
+    height: 300px;
+    background-color: red;
+    /* z-index: 1; */
+
+}
+
+
+.box::after{
+   
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: 1s;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+
+}
+
+.box:hover::after {
+   
+    height: 100%;
+   
+}
+

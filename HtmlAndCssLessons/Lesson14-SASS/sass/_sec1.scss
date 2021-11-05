@@ -1,0 +1,14 @@
+section{
+    width: 100%;
+    height: 300px;
+    background-color: khaki;
+  @include ortalama();
+  flex-direction: column;
+    h1{
+        color: red;
+    }
+    a{
+        color: royalblue;
+        font-size: 20px;
+    }
+}
