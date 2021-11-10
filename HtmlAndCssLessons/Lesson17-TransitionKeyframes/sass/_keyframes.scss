@@ -1,0 +1,30 @@
+body,*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    .box{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        animation-name: eloset;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes eloset {
+        // from{left: 10px;}
+        // to{left: 500px;}
+
+        0%{left: 0px; top:0px; background-color: black; width: 100px; height: 100px;}
+        25%{left: 500px; top:0px; background-color: rgb(211, 0, 0); width: 150px; height: 150px; border-radius: 50%;}
+        50%{left: 500px; top:500px;background-color: rgb(23, 197, 0); width: 20px; height: 100px;}
+        75%{left: 0px; top:500px;background-color: rgb(138, 0, 126); width: 100px; height: 100px; transform: rotate(70deg);}
+        100%{left: 0px; top:0px;background-color: rgb(155, 0, 72); width: 100px; height: 100px;}
+    }
+
+
+}

@@ -1,0 +1,93 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color:#000;
+    @include center();
+    nav{
+    width: 70%;
+    @include center();
+
+
+        ul{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+                transition: 1s;
+
+            #main{
+                ul{
+
+                    background-color:  #eee;
+                    border: 1px solid red;
+                    // display: none;
+                    opacity: 0;
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        padding: 10px;
+                        a{
+                            transition: 1s;
+                            color: #000;
+                        }
+                    }
+                }
+                &:hover ul{
+                    opacity: 1;
+                  
+                }
+               
+            }
+
+
+            li{
+                width: 100px;
+                height: 20px;
+                list-style: none;
+                a{
+                    // transition-property: color  ;
+                    // transition-duration: 1s;
+                    transition: 1s;
+                    
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 20px;
+                        &:hover{
+                            color: red;
+                            // border:1px solid red;
+                            padding: 10px;
+                        }
+                }
+            }
+        }
+    }
+}
+
+section{
+    width: 100%;
+    height: 300px;
+    @include center();
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        // transition: background-color 1s, width 5s ;
+        transition: 1s;
+        // transition-delay: 2s;
+        &:hover{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    }
+}
+
+// a:hover{
+//     color: red;
+// }

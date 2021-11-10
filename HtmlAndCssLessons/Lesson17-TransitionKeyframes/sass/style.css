@@ -1,0 +1,102 @@
+body, * {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  -webkit-animation-name: eloset;
+          animation-name: eloset;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes eloset {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+  }
+  25% {
+    left: 500px;
+    top: 0px;
+    background-color: #d30000;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  50% {
+    left: 500px;
+    top: 500px;
+    background-color: #17c500;
+    width: 20px;
+    height: 100px;
+  }
+  75% {
+    left: 0px;
+    top: 500px;
+    background-color: #8a007e;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #9b0048;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes eloset {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+  }
+  25% {
+    left: 500px;
+    top: 0px;
+    background-color: #d30000;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  50% {
+    left: 500px;
+    top: 500px;
+    background-color: #17c500;
+    width: 20px;
+    height: 100px;
+  }
+  75% {
+    left: 0px;
+    top: 500px;
+    background-color: #8a007e;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: #9b0048;
+    width: 100px;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
