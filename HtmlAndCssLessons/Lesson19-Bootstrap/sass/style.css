@@ -1,0 +1,13 @@
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation: bounce;
+          animation: bounce;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  /* don't forget to set a duration! */
+}
+/*# sourceMappingURL=style.css.map */
