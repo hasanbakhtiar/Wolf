@@ -1,0 +1,23 @@
+header{
+    width: 100% !important;
+    height: 300px;
+
+}
+
+.navbar {
+    padding-top: 3.5rem;
+}
+
+
+.liquid-btn{
+    background: $liquidOrange;
+    border:  1px solid $liquidOrange;
+    color: $liquidBlack;
+    &:hover{
+        color: #fff;
+    background: $liquidBlack;
+    border: 1px solid $liquidOrange ;
+
+
+    }
+}

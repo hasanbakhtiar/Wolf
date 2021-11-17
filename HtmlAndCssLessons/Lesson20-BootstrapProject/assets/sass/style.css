@@ -1,0 +1,36 @@
+header {
+  width: 100% !important;
+  height: 300px;
+}
+
+.navbar {
+  padding-top: 3.5rem;
+}
+
+.liquid-btn {
+  background: #FC4626;
+  border: 1px solid #FC4626;
+  color: #101112;
+}
+
+.liquid-btn:hover {
+  color: #fff;
+  background: #101112;
+  border: 1px solid #FC4626;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 52%;
+  bottom: 15.25rem;
+  left: 1%;
+  padding-top: -0.75rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 58px;
+}
+/*# sourceMappingURL=style.css.map */
