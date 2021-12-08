@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .displayNone{
+            opacity: 0;
+            transition: 1s;
+        }
+        .displayBlock{
+            opacity: 1;
+            transition: 1s;
+
+        }
+        .red{
+            color: red;
+        }
+
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <p>Hello1</p>
+    <p>Hello2</p>
+<h1 id="myColor">Red</h1>
+
+    <a class="displayBlock red" href="https://google.com" target="_blank">Google</a>
+    <button onclick="myFunc()" ondblclick="myBlock()">Change Text</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
