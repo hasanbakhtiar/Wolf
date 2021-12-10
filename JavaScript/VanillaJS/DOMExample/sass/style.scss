@@ -1,0 +1,30 @@
+html{
+    overflow-x: hidden;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+ 
+    .box{
+        transition: 1s;
+        width: 100px;
+        height: 100vh;
+        background-color: red;
+        position: absolute;
+        right: -100px;
+        button{
+        transform: translateX(-54px);
+
+        }
+    }
+    
+    .box1{
+        transition: 1s;
+        width: 100px;
+        height: 100vh;
+        background-color: red;
+        position: absolute;
+        right:  0px; 
+        
+    }
+}
