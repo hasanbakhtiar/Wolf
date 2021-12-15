@@ -36,19 +36,18 @@ let toDoContainer = document.querySelector('#toDoContainer');
 
 const addElement =()=>{
     let paragraph = document.createElement('li');
-    // <li></li>
     paragraph.innerText = inputFiled.value;
-    // <li>dhfgsdfghsd</li>
    toDoContainer.appendChild(paragraph);
-//    <ol>
-//        <li>dhfgsdfghsd</li>
-//        <li>dhfgsdfghsd</li>
-//        <li>dhfgsdfghsd</li>
-//        <li>dhfgsdfghsd</li>
-//        <li>dhfgsdfghsd</li>
-//    </ol>
     inputFiled.value="";
+    paragraph.addEventListener('click', ()=>{
+        paragraph.style.color = "red";
+        paragraph.style.textDecoration = 'line-through'
+    })
+
+    paragraph.addEventListener('dblclick', ()=>{
+        toDoContainer.removeChild(paragraph)
+    })
 }
 
 
-addToDoButton.addEventListener('mouseover', addElement)
+addToDoButton.addEventListener('click', addElement)
