@@ -1,0 +1,16 @@
+<Car id="1">
+<brand>Mercedes</brand>
+<model>S500</model>
+<color>white</color>
+<engine>v5</engine>
+<doortype>2</doortype>
+</Car>
+
+
+<Car id="2">
+<brand>Mercedes</brand>
+<model>S500</model>
+<color>white</color>
+<engine>v5</engine>
+<doortype>2</doortype>
+</Car>

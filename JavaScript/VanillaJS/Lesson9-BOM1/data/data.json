@@ -1,0 +1,17 @@
+{
+    "Car":
+    [
+        {
+            "brand": "Mercedes",
+            "model": "S500",
+            "color": "white",
+            "doortype": 2
+        },
+        {
+            "brand": "Mercedes",
+            "model": "S500",
+            "color": "white",
+            "doortype": 2
+        }
+    ]
+}
