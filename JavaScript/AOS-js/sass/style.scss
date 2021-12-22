@@ -1,0 +1,14 @@
+.con{
+    width: 100%;
+    height: 400vh;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: cadetblue;
+        margin: 10px;
+    }
+
+}
