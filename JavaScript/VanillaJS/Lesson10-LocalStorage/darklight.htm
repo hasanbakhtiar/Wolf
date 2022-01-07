@@ -1,0 +1,55 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .one{
+                color: green;
+        }
+        .two{
+                color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="">Mode</h1>
+
+    <button id="btn1">Green</button>
+    <button id="btn2">Red</button>
+
+
+    <script>
+        const btnOne = document.querySelector('#btn1'); 
+        const btnTwo = document.querySelector('#btn2'); 
+        const text = document.querySelector('h1');
+
+        const oneColor = ()=>{
+            const oneC = text.attributes[0].value = "one";
+            localStorage.setItem('modecolor', oneC);
+        }
+
+        const twoColor = ()=>{
+            const twoC = text.attributes[0].value = "two";
+            localStorage.setItem('modecolor', twoC);
+           
+        }
+
+        btnOne.addEventListener('click', oneColor);
+        btnTwo.addEventListener('click', twoColor);
+
+        text.attributes[0].value = localStorage.getItem('modecolor');
+
+
+    </script>
+
+    
+</body>
+</html>
