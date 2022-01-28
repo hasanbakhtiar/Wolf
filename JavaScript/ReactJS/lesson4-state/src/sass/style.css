@@ -1,0 +1,17 @@
+.box {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+nav {
+  border: 1px solid #000;
+  background-color: #333;
+}
+
+nav ul {
+  width: 70%;
+  background-color: #eee;
+}
+/*# sourceMappingURL=style.css.map */
