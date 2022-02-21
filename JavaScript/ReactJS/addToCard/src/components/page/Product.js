@@ -1,6 +1,5 @@
 import React from 'react'
 import ProductItem from './ProductItem'
-import data from '../data/melumatlar'
 import melumatlar from '../data/melumatlar'
 
 const Product = () => {
@@ -14,7 +13,11 @@ const Product = () => {
         sekil={item.img}
         basliq={item.title} 
         qiymet={item.price} 
-        aciqlama={item.desc}/>
+        aciqlama={item.desc}
+        item={item}
+        key={index}
+        />
+        
         )
         })}
        
