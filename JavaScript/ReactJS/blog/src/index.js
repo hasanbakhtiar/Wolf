@@ -1,65 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {v4 as uuid} from 'uuid'
-import { createStore,combineReducers } from "redux";
+import configureStore from './store/configureStore';
+import {blogAdd, blogRemove, blogEdit} from './actions/blogs';
+import AppRouter from "./routers/AppRouter";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle'; 
+import { Provider } from "react-redux";
 
 
+const store = configureStore();
 
-//Blog Action Start
-const blogAdd = ({title="",description="",dataAdded=0})=>({
-    type: "ADD_BLOG",
-    blog:{
-        id:uuid(),
-        title:title,
-        description: description,
-        dataAdded: dataAdded
-    }
-});
-const blogRemove = ({id})=>(
-    {
-        type:"REMOVE_BLOG",
-        id:id
-    }
-)
-
-//Blog Action End
-
-
-//Blog Reducer Start
-const blogState = [];
-
-const blogReducer = (state = blogState, action) => {
-  switch (action.type) {
-    case "ADD_BLOG":
-        return [
-            ...state,
-            action.blog
-        ];
-      
-
-    case "REMOVE_BLOG":
-      return state.filter(({id})=>{
-          return id !== action.id
-      })
-
-    case "EDIT_BLOG":
-
-    default:
-      return state;
-  }
-};
-
-
-
-const store = createStore(
-    combineReducers({
-        blog: blogReducer,
-       
-    })
-);
-
-
-
+//Blog Dispatch Start
+// =======================================================
 store.subscribe(()=>{
     console.log(store.getState());
 })
@@ -72,15 +24,19 @@ const blog2 = store.dispatch(blogAdd({title:"blog2", description:"description3",
 console.log(blog2.blog.id);
 
 store.dispatch(blogRemove({id:blog2.blog.id}))
+store.dispatch(blogEdit(blog1.blog.id,{title:"update",description:"helo"}));
+ store.dispatch(blogAdd({title:"blog3", description:"description3",dataAdded:'2022'}));
 
 
-
-
+// =======================================================
+//Blog Dispatch End
 
 
 
 const App = () => {
-  return <h1></h1>;
+  return <Provider store={store}>
+    <AppRouter />
+  </Provider>;
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
