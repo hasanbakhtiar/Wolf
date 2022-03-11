@@ -4,7 +4,8 @@ import BlogList from './BlogList'
 const BlogListPage = () => {
   return (
     <div>
-        <BlogList />
+      <h1 className='text-center'>Blog Lists</h1>
+      <BlogList />
     </div>
   )
 }

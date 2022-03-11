@@ -4,17 +4,18 @@ import BlogListItem from './BlogListItem'
 
 const BlogList = (props) => {
   return (
-    <ul>
-        {props.blogs.map(blog=>{
-            return <BlogListItem key={blog.id} {...blog} />
-        })}
-    </ul>
+      <div className='row'>
+         {props.amazon.map(melumat=>{
+             return  <BlogListItem key={melumat.id} {...melumat} />
+         })}
+      </div>
   )
 }
-const mapStateProps = (state)=>{
+
+const mapStateToProps =(state)=>{
     return{
-        blogs: state.blogs
+        amazon:state.amazon
     }
 }
 
-export default connect(mapStateProps)(BlogList)
+export default connect(mapStateToProps)(BlogList)

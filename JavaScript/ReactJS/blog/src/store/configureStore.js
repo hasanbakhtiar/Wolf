@@ -8,7 +8,7 @@ export default ()=>{
     
 const store = createStore(
     combineReducers({
-        blogs: blogReducer,
+        amazon: blogReducer,
        
     })
 );
