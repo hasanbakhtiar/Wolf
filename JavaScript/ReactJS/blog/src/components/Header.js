@@ -22,7 +22,9 @@ const Header = () => {
           </li>
          
         </ul>
-       
+       <div className="d-flex">
+         <Link to="/addblog" className='btn btn-secondary'>Add Blog</Link>
+       </div>
       </div>
     </div>
   </nav>
