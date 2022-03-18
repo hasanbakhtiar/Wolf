@@ -6,8 +6,10 @@ import { connect } from 'react-redux'
 const AddBlogPage = (props) => {
   return (
     <div>
-        <BlogForm onSubmit={(blog)=>{
-            props.dispatch(blogAdd(blog));
+          <h1 className='text-center'>Add Blog Page</h1>
+
+        <BlogForm onSubmit={(blogAmazoniya)=>{
+            props.dispatch(blogAdd(blogAmazoniya));
             props.history.push('/blog');
         }}/>
     </div>

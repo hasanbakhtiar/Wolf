@@ -10,6 +10,7 @@ const BlogListItem = ({id,title,img}) => {
   <Link to={`/blog/${id}`}> <img src={img} alt="err" width="200" /></Link>
     <h5 className="card-title">{title}</h5>
     <Link to={`/blog/${id}`} className="btn btn-dark">Read More</Link>
+    <Link to={`/edit/${id}`} className=" ms-3 btn btn-warning">Edit</Link>
   </div>
   </div>
     

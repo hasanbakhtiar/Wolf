@@ -5,13 +5,13 @@ import BlogDetailsItem from './BlogDetailsItem'
 const BlogDetailsPage = (props) => {
   return (
     <div>
-        <BlogDetailsItem {...props.blogInfo}/>
+        <BlogDetailsItem {...props.blog}/>
     </div>
   )
 }
 const mapStateToProps =(state,props)=>{
     return{
-            blogInfo: state.amazon.find((blog)=>{
+            blog: state.amazon.find((blog)=>{
                 return blog.id === props.match.params.id
             })
     }

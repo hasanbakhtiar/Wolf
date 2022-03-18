@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import configureStore from './store/configureStore';
-import {blogAdd, blogRemove, blogEdit} from './actions/blogs';
+import {blogAdd} from './actions/blogs';
 import AppRouter from "./routers/AppRouter";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle'; 
@@ -35,7 +35,8 @@ store.subscribe(()=>{
 store.dispatch(blogAdd({title:"What is React JS", description:"A JavaScript library for building user interfaces",dataAdded:"2021",img:img1}));
 
 
-store.dispatch(blogAdd({title:"What is Programming language", description:"A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.",dataAdded:"11/03/2022",img:img2}))
+ store.dispatch(blogAdd({title:"What is Programming language", description:"A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.",dataAdded:"11/03/2022",img:img2}))
+
 
 
 // =======================================================

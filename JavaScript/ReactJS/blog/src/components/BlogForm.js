@@ -4,10 +4,10 @@ export default class BlogForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title:"",
-      description:"",
-      dataAdded:"",
-      img:"",
+      title:props.blog? props.blog.title:"",
+      description:props.blog? props.blog.description:"",
+      dataAdded:props.blog?props.blog.dataAdded:"",
+      // img:props.blog?props.blog.img:"",
       error: ""
     };
   }
@@ -28,10 +28,6 @@ this.setState(()=>({title}));
     this.setState(()=>({dataAdded}));
   };
 
-  onImgChange=(e)=>{
-        const img = e.target.value;
-        this.setState(()=>({img}))
-  }
 
 
 
@@ -45,8 +41,7 @@ this.setState(()=>({title}));
         this.props.onSubmit({
             title: this.state.title,
             description:this.state.description,
-            dataAdded:this.state.dataAdded,
-            img:this.state.img
+            dataAdded:this.state.dataAdded
         })
     }
   };
@@ -56,7 +51,6 @@ this.setState(()=>({title}));
       <div className="d-flex align-items-center justify-content-center w-100 mt-5">
         <form onSubmit={this.onSubmit}>
         {this.state.error && <p className="alert-danger">{this.state.error}</p>}
-          <h5>Add Blog Page</h5>
           <div className="mb-3 ">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Title
@@ -101,6 +95,8 @@ this.setState(()=>({title}));
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               onChange={this.onDateChange}
+              value={this.state.dataAdded}
+
              
 
             />
@@ -109,13 +105,11 @@ this.setState(()=>({title}));
             </div>
           </div>
 
-          <div className="mb-3 ">
-              <input type="file"  onChange={this.onImgChange}/>
-              </div>
+        
          
 
           <button type="submit" className="btn btn-primary">
-            Add Blog
+            Save
           </button>
         </form>
       </div>
